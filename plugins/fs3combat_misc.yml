@@ -1,0 +1,59 @@
+---
+fs3combat:
+  default_type: Human
+  allow_vehicles: true
+  allow_mounts: true
+  stances:
+    Aggressive:
+      attack_mod: 2
+      defense_mod: -2
+    Reckless:
+      attack_mod: 4
+      defense_mod: -4
+    Normal:
+      attack_mod: 0
+      defense_mod: 0
+    Defensive:
+      attack_mod: -2
+      defense_mod: 2
+    Evasive:
+      attack_mod: -4
+      defense_mod: 4
+    Cover:
+      attack_mod: 0
+      defense_mod: 0
+    Hidden:
+      attack_mod: 0
+      defense_mod: 0
+  combatant_types:
+    Observer:
+      hitloc: Humanoid
+    Human:
+      weapon: Pistol
+      weapon_specials:
+      - Ap
+      armor: Tactical
+      hitloc: Humanoid
+      defense_skill: Reflexes
+    Unarmed:
+      weapon: Unarmed
+      hitloc: Humanoid
+      defense_skill: Reflexes    
+  shortcuts:
+    combat/skill: combat/summary
+    combat/skills: combat/summary
+    combat/slackers: combat/summary
+    combat/add: combat/join
+    combat/remove: combat/leave
+    combat/hitlocs: combat/hitloc
+    vehicles: vehicle
+    healing: heal/list
+    weapons: weapon
+    mounts: mount
+  achievements:
+    fs3_hero:
+      type: fs3
+      message: Heroed from a knockout.
+    fs3_joined_combat:
+      type: fs3
+      message: Joined %{count} combats.

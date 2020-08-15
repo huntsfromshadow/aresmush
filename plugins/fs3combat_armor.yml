@@ -1,0 +1,77 @@
+---
+fs3combat:
+  armor:
+    None:
+      description: In case you need to take off armor
+      defense: 0
+      protection:
+        Nowhere: 0
+    Base Nanoweave:
+      description: The typical armor that every lattice connected human has
+      defense: 0
+      protection:
+        Head: 1
+        Neck: 1
+        Chest: 1
+        Abdomen: 1
+        Left Arm: 1
+        Right Arm: 1
+        Left Hand: 1
+        Right Hand: 1
+        Left Leg: 1
+        Right Leg: 1
+        Left Foot: 1
+        Right Foot: 1
+    Pre-Tactical:
+      description: Military-Grade Kevlar Vest and Helmet
+      defense: 0
+      protection:
+        Head: 7
+        Neck: 5
+        Chest: 8
+        Abdomen: 7
+    Pre-Police:
+      description: Police-Grade Kevlar Vest
+      defense: 0
+      protection:
+        Chest: 7
+        Abdomen: 6
+      allowed_specials:
+      - Helmet
+    Pre-Centurion:
+      description: Cylon Centurion Armor
+      defense: 0
+      protection:
+        Head: 9
+        Neck: 9
+        Chest: 10
+        Abdomen: 10
+        Left Arm: 8
+        Right Arm: 8
+        Left Hand: 7
+        Right Hand: 7
+        Left Leg: 9
+        Right Leg: 9
+        Left Foot: 7
+        Right Foot: 7
+    Pre-Cylon:
+      description: Cylon (Non-Centurion) Skeleton
+      defense: 0
+      protection:
+        Head: 6
+        Neck: 7
+        Chest: 7
+        Abdomen: 7
+        Left Arm: 5
+        Right Arm: 5
+        Left Hand: 6
+        Right Hand: 5
+        Left Leg: 6
+        Right Leg: 6
+        Left Foot: 5
+        Right Foot: 5
+  armor specials:
+    Helmet:
+      description: A helmet
+      protection:
+        Head: 4

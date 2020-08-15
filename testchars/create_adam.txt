@@ -1,0 +1,33 @@
+create Adam password
+tos/agree
+
+
+age 40
+demographic eyes = blue
+fullname Adam Axe
+demographic gender=male
+demographic hair=red
+height 6"
+demographic physique=built
+playedby actor 1
+demographic skin=unknown
+groups/set origin=roadborne
+bg/set bg1
+raise bg1
+bg/set bg2
+raise bg2
+describe me=a description
+
+shortdesc me=a short desc
+hooks/set my hooks
+lastwill mylastwill
+raise alertness
+raise athletics
+raise composure
+raise firearms
+raise medicine
+raise melee
+raise standard
+raise standard
+app/submit
+app/confirm

@@ -1,0 +1,31 @@
+<%= header %>
+%xh<%= char.name.upcase %>'S KNOWN SCRIPTS%xn
+
+<% if learned_scripts_by_group.size > 0 %>
+SCRIPT  TIER  MEMORY_BLOCKS FORK_CODE
+<% learned_scripts_by_group.each do |grp, data| %>
+<%= section_line grp %>
+<% data.each do |scr| %>
+<%= scr.name %> <%= scr.tier %> <%= scr.memory_blocks %> <%= scr.fork_code %>
+<% end %>
+
+<% end %>
+<% else %>
+No Learned Scripts
+<% end %>
+
+%xhSCRIPTS <%= char.name.upcase %> IS LEARNING %xn(<%= char.fs3_xp %> XP)
+<% if learning_scripts_by_group.size > 0 %>
+SCRIPT                   TIER    PROGRESS         LEARN AGAIN IN
+<% learning_scripts_by_group.each do |grp, data| %>
+<%= section_line grp %>
+<% data.each do |script| %>
+<%= display(script) %>
+<% end %>
+
+<% end %> 
+<% else %>
+
+No Scripts are being learned.
+<% end %>
+<%= footer %>
